@@ -20,37 +20,37 @@ const galleryPlants = [
     name: 'Areca Palm',
     zone: 'Reception + Open Floors',
     image:
-      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Areca%20palm%201.jpg',
   },
   {
     name: 'Snake Plant',
     zone: 'Meeting Rooms',
     image:
-      'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1200&q=80',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Snake%20plant%202.jpg',
   },
   {
     name: 'ZZ Plant',
     zone: 'Low-Light Workstations',
     image:
-      'https://images.unsplash.com/photo-1597055181300-e3633a917c9c?auto=format&fit=crop&w=1200&q=80',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/ZZ%20Plant%20%28Zamioculcas%20zamiifolia%29%201.jpg',
   },
   {
     name: 'Rubber Plant',
     zone: 'Director Cabins',
     image:
-      'https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Ficus%20elastica%20%28rubber%20plant%29.jpg',
   },
   {
     name: 'Peace Lily',
     zone: 'Lobby Corners',
     image:
-      'https://images.unsplash.com/photo-1604762524889-3e2fcc145683?auto=format&fit=crop&w=1200&q=80',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Spathiphyllum%20plant.jpg',
   },
   {
     name: 'Ficus Lyrata',
     zone: 'Executive Lounge',
     image:
-      'https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?auto=format&fit=crop&w=1200&q=80',
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Ficus%20lyrata%2011zz.jpg',
   },
 ];
 
