@@ -4,10 +4,12 @@ import {
   Building2,
   CalendarClock,
   CheckCircle2,
+  CloudSun,
   Flower2,
   Leaf,
   MapPin,
   ShieldCheck,
+  Sparkles,
   Sprout,
   Trees,
   Wrench,
@@ -96,6 +98,12 @@ const services = [
   },
 ];
 
+const heroPlants = [
+  'https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1200&q=80',
+  'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80',
+  'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80',
+];
+
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -106,50 +114,93 @@ const fadeUp = {
 function App() {
   return (
     <main className="min-h-screen">
-      <section className="px-4 pt-6 pb-10 md:pt-10 md:pb-16">
+      <section className="px-4 pt-5 pb-10 md:pt-8 md:pb-16">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45 }}
-          className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 via-brand-600 to-leaf-700 text-white shadow-xl"
+          transition={{ duration: 0.5 }}
+          className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-700 via-lagoon-700 to-brand-700 text-white shadow-xl"
         >
-          <div className="px-5 py-10 md:px-10 md:py-14">
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-sm font-medium">
-              <Leaf className="h-4 w-4" />
-              Ankur Nursery
-            </p>
-            <h1 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight md:text-5xl">
-              Corporate Greenery Solutions for Modern Offices
-            </h1>
-            <p className="mt-4 max-w-2xl text-base text-brand-50 md:text-lg">
-              We help large companies transform entire office environments with premium indoor plants, rent-a-plant
-              programs, and full-service maintenance.
-            </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#contact"
-                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-brand-700 transition hover:brightness-95"
-              >
-                Book Site Visit
-                <ArrowRight className="h-5 w-5" />
-              </a>
-              <a
-                href="#gallery"
-                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border border-white/45 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10"
-              >
-                Explore Plant Gallery
-              </a>
+          <div className="pointer-events-none absolute -left-16 top-20 h-44 w-44 rounded-full bg-sun-300/35 blur-3xl" />
+          <div className="pointer-events-none absolute -right-14 bottom-12 h-52 w-52 rounded-full bg-lagoon-300/35 blur-3xl" />
+          <div className="pointer-events-none absolute left-1/3 top-0 h-24 w-24 rounded-full bg-white/20 blur-2xl" />
+
+          <div className="relative grid gap-7 px-5 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-end md:gap-8 md:px-10 md:py-10">
+            <div>
+              <p className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/15 px-3 py-1 text-sm font-medium backdrop-blur">
+                <Leaf className="h-4 w-4" />
+                Ankur Nursery
+              </p>
+              <h1 className="mt-4 max-w-3xl text-3xl font-extrabold tracking-tight text-white md:text-5xl">
+                Tropical Office Landscapes That Don&apos;t Feel Corporate
+              </h1>
+              <p className="mt-4 max-w-2xl text-base text-white/90 md:text-lg">
+                We design, install, and maintain vibrant plant ecosystems for large offices so your workspace feels
+                alive, premium, and unforgettable.
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#contact"
+                  className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-brand-700 transition hover:brightness-95"
+                >
+                  Book Site Visit
+                  <ArrowRight className="h-5 w-5" />
+                </a>
+                <a
+                  href="#gallery"
+                  className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border border-white/50 bg-black/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10"
+                >
+                  Explore Plant Gallery
+                </a>
+              </div>
+
+              <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                {[
+                  { label: '5000+', note: 'Plants in active office care' },
+                  { label: '48 Hrs', note: 'Replacement turnaround SLA' },
+                  { label: '100+', note: 'Large office clients supported' },
+                ].map((point) => (
+                  <div key={point.label} className="rounded-2xl bg-white/15 p-4 shadow-md backdrop-blur-sm">
+                    <p className="text-2xl font-bold tracking-tight">{point.label}</p>
+                    <p className="mt-1 text-sm text-white/85">{point.note}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {[
-                '5000+ office plants maintained monthly',
-                'Pan-city delivery and service teams',
-                'Fast plant replacement SLA',
-              ].map((point) => (
-                <div key={point} className="rounded-2xl bg-white/15 p-4 backdrop-blur-sm">
-                  <p className="text-sm font-medium">{point}</p>
-                </div>
-              ))}
+
+            <div className="relative min-h-[360px] md:min-h-[440px]">
+              <motion.img
+                initial={{ opacity: 0, x: 14 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                src={heroPlants[0]}
+                alt="Tropical office plant arrangement"
+                className="absolute right-0 top-0 h-[62%] w-[78%] rounded-[1.7rem] border-2 border-white/30 object-cover shadow-2xl"
+              />
+              <motion.img
+                initial={{ opacity: 0, x: -12, y: 10 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.25 }}
+                src={heroPlants[1]}
+                alt="Lush indoor tropical greens"
+                className="absolute bottom-0 left-0 h-[58%] w-[63%] rounded-[1.5rem] border-2 border-white/25 object-cover shadow-2xl"
+              />
+              <motion.img
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.35 }}
+                src={heroPlants[2]}
+                alt="Large statement foliage for office entrance"
+                className="absolute bottom-6 right-5 h-[32%] w-[45%] rounded-2xl border-2 border-white/25 object-cover shadow-xl"
+              />
+              <div className="absolute left-2 top-6 inline-flex items-center gap-2 rounded-full bg-black/25 px-3 py-1.5 text-sm font-medium backdrop-blur">
+                <CloudSun className="h-4 w-4 text-sun-300" />
+                Tropical Mood Styling
+              </div>
+              <div className="absolute -bottom-2 right-2 inline-flex items-center gap-2 rounded-full bg-sun-300/95 px-3 py-1.5 text-sm font-semibold text-soil-700 shadow-lg">
+                <Sparkles className="h-4 w-4" />
+                Designed for Wow Moments
+              </div>
             </div>
           </div>
         </motion.div>
