@@ -96,6 +96,41 @@ const services = [
     description: 'Quarterly plant rotation to keep your office aesthetics fresh and vibrant.',
     Icon: Flower2,
   },
+  {
+    title: 'Vertical Gardens',
+    description: 'Design and installation of lush vertical green walls for lobbies and office zones.',
+    Icon: Trees,
+  },
+  {
+    title: 'Garden Execution and Maintenance',
+    description: 'Complete on-site garden setup plus scheduled upkeep for long-term plant health.',
+    Icon: Wrench,
+  },
+  {
+    title: 'Artificial Lawns',
+    description: 'Premium artificial grass solutions for terraces, breakout zones, and activity areas.',
+    Icon: Sprout,
+  },
+  {
+    title: 'Artificial Vertical Garden',
+    description: 'Low-maintenance decorative vertical greens for statement walls and feature spaces.',
+    Icon: Leaf,
+  },
+  {
+    title: 'Garden Center',
+    description: 'Reliable supply of indoor and outdoor plants, planters, media, and garden essentials.',
+    Icon: Flower2,
+  },
+  {
+    title: 'Irrigation',
+    description: 'Efficient drip and automated watering systems tailored to your landscape layout.',
+    Icon: ShieldCheck,
+  },
+  {
+    title: 'Landscape Design Consultancy',
+    description: 'Professional consultation for concept planning, plant palettes, and site optimization.',
+    Icon: Building2,
+  },
 ];
 
 const heroPlants = [
