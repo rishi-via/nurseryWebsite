@@ -17,40 +17,39 @@ import {
 
 const galleryPlants = [
   {
-    name: 'Areca Palm',
-    zone: 'Reception + Open Floors',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/Areca%20palm%201.jpg',
+    name: 'Money Plant Njoy',
+    zone: 'Reception Desk + Collaboration Corners',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/07/Moneyplant-njoy-1000x1000-1.jpg',
   },
   {
-    name: 'Snake Plant',
-    zone: 'Meeting Rooms',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/Snake%20plant%202.jpg',
+    name: 'Money Plant Golden',
+    zone: 'Workstations + Indoor Accent Walls',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/02/Moneyplant-golden.jpg',
   },
   {
-    name: 'ZZ Plant',
-    zone: 'Low-Light Workstations',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/ZZ%20Plant%20%28Zamioculcas%20zamiifolia%29%201.jpg',
+    name: 'Money Plant Green',
+    zone: 'Cabins + Shelf Displays',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/02/Moneyplant-green.jpg',
   },
   {
-    name: 'Rubber Plant',
-    zone: 'Director Cabins',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/Ficus%20elastica%20%28rubber%20plant%29.jpg',
+    name: 'Gardenia jasminoides (Anant)',
+    zone: 'Outdoor Office Entrances + Courtyards',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/04/Gardenia-jasminoides-Anant.jpg',
   },
   {
-    name: 'Peace Lily',
-    zone: 'Lobby Corners',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/Spathiphyllum%20plant.jpg',
+    name: 'Millingtonia hortensis (Latak Chameli)',
+    zone: 'Large Campuses + Perimeter Landscaping',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/04/Millingtonia-hortensis-Latak-Chameli.jpg',
   },
   {
-    name: 'Ficus Lyrata',
-    zone: 'Executive Lounge',
-    image:
-      'https://commons.wikimedia.org/wiki/Special:FilePath/Ficus%20lyrata%2011zz.jpg',
+    name: 'Cashewnut Grafted',
+    zone: 'Corporate Gardens + Outdoor Green Zones',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/04/Cashewnut-grafted.jpg',
+  },
+  {
+    name: 'Banana',
+    zone: 'Tropical Landscape Pockets + Outdoor Spaces',
+    image: 'https://www.ankurnursery.com/wp-content/uploads/2024/04/Banana.jpg',
   },
 ];
 
@@ -250,7 +249,7 @@ function App() {
           <motion.div {...fadeUp}>
             <p className="text-sm font-semibold uppercase tracking-[0.15em] text-brand-700">Plant Gallery</p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 md:text-4xl">
-              Plants Curated for Corporate Interiors
+              Plant Collection from Ankur Nursery
             </h2>
           </motion.div>
 
