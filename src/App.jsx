@@ -38,7 +38,7 @@ const galleryPlants = [
     name: 'Rubber Plant',
     zone: 'Director Cabins',
     image:
-      'https://images.unsplash.com/photo-1614594975304-8f7e8f46b8e5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
     name: 'Peace Lily',
