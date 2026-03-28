@@ -103,6 +103,8 @@ const heroPlants = [
   'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80',
 ];
+const heroBackground =
+  'https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=1800&q=80';
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -119,8 +121,10 @@ function App() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-700 via-lagoon-700 to-brand-700 text-white shadow-xl"
+          style={{ backgroundImage: `url(${heroBackground})` }}
+          className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-cover bg-center text-white shadow-xl"
         >
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-700/85 via-brand-700/65 to-lagoon-700/75" />
           <div className="pointer-events-none absolute -left-16 top-20 h-44 w-44 rounded-full bg-sun-300/35 blur-3xl" />
           <div className="pointer-events-none absolute -right-14 bottom-12 h-52 w-52 rounded-full bg-lagoon-300/35 blur-3xl" />
           <div className="pointer-events-none absolute left-1/3 top-0 h-24 w-24 rounded-full bg-white/20 blur-2xl" />
